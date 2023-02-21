@@ -1,0 +1,11 @@
+function [x]=PPlap(x0,e)
+x=g(x0);
+n=0;
+if (abs(gP(x0))<1)
+    while (abs(x-x0)>e)
+        x0=x;
+        x=g(x0);
+        n=n+1;
+    end
+end
+n

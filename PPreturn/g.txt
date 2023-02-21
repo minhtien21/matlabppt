@@ -1,0 +1,3 @@
+function [kq]=g(x)
+kq=exp(-x);
+end
